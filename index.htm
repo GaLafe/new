@@ -466,7 +466,29 @@ body.iframe-lightbox--open {
 
 	(function(root, document) {
 		"use strict";
-		[].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function(el) ;
+		[].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function(el) {
+			el.lightbox = new IframeLightbox(el, {
+				onCreated: function() {
+					/* show your preloader */
+				},
+				onLoaded: function() {
+					/* hide your preloader */
+				},
+				onError: function() {
+					/* hide your preloader */
+				},
+				onClosed: function() {
+					/* hide your preloader */
+				},
+				scrolling: false,
+				/* default: false */
+				rate: 500 /* default: 500 */
+			});
+		});
+
+
+	(function(root, document) {
+		"use strict";
 		[].forEach.call(document.getElementsByClassName("premiumTeaserHolder tilt"), function(el) {
 			el.lightbox = new IframeLightbox(el, {
 				onCreated: function() {
