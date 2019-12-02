@@ -42,7 +42,27 @@
 			<a href="index.htm?locale=en" class="logo" title="Famobi">Famobi</a>
 			<div class="topNavigation">
 				<ul>
+					<li class="search">
+						<div class="searchContainer">
+							<form>
+								<div class="searchHolder">
+									<svg class="search" x="0px" y="0px" viewbox="0 0 100 100"><path d="M39.9,5C29.2,5,19.2,9.8,12.5,18.2c-10.1,12.6-9.9,31.5,0.4,44  c6.7,8.1,16.6,12.7,27,12.7c6.6,0,13.1-1.9,18.7-5.4l0.6-0.4L82.9,93c2.6,2.7,7.3,2.7,9.9,0c1.4-1.4,2.2-3.2,2.2-5.1  c0-1.9-0.7-3.6-2-5L69.2,59.1l0.4-0.6c8.7-13.9,6.6-31.6-4.9-43.2C58.1,8.6,49.3,5,39.9,5 M57.5,57.6c-4.7,4.7-11,7.3-17.6,7.3  c-6.7,0-12.9-2.6-17.6-7.3C17.6,52.9,15,46.6,15,40c0-6.7,2.6-12.9,7.3-17.6c4.7-4.7,11-7.3,17.6-7.3c6.7,0,12.9,2.6,17.6,7.3  c4.7,4.7,7.3,11,7.3,17.6S62.2,52.9,57.5,57.6"></path></svg>
+									<a href="#" class="x" title="Empty Search"><svg viewbox="0 0 1024 1024" x="0px" y="0px"><path d="M874.037543 149.961337c-199.947609-199.947609-524.127976-199.948609-724.076586 0-199.947609 199.947609-199.947609 524.128976 0 724.076586s524.128976 199.947609 724.076586 0 199.947609-524.128976 0-724.076586zM734.736815 692.311278c11.666977 11.666977 11.666977 30.75894 0 42.425917-11.666977 11.666977-30.75894 11.666977-42.425917 0L511.99925 554.425547 331.687602 734.738195c-11.666977 11.666977-30.75894 11.666977-42.425917 0s-11.666977-30.75894 0-42.425917L469.573333 511.99963 289.260685 331.687982c-11.666977-11.666977-11.666977-30.75894 0-42.425917s30.75894-11.666977 42.425917 0L511.99925 469.573713l180.311648-180.311648c11.666977-11.667977 30.75894-11.667977 42.426917-0.001 11.666977 11.666977 11.666977 30.75894 0 42.425917L554.425167 511.99963l180.311648 180.311648z"></path></svg></a>
 
+									<label>
+										<em>Search</em>
+										<input type="text">
+									</label>
+
+									<div class="searchResults"></div>
+								</div>
+							</form>
+						</div>
+					</li>
+					</li>
+					<li class="iframe-lightbox-link">
+						<a href="https://gachalife.ru/gacha/" rel="lightbox" data-scrolling="true" class="iframe-lightbox-link">Jobs</a>
+            
 <style type="text/css">
 /*!
  * modified Simple lightbox effect in pure JS
@@ -69,7 +89,7 @@
 	 * @see {@link https://github.com/englishextra/iframe-lightbox/issues/10}
 	 * @see {@link https://github.com/englishextra/iframe-lightbox/issues/14}
 	 */
-	z-index: 999999;
+	z-index: 999999; 
 }
 
 .iframe-lightbox .backdrop {
@@ -263,7 +283,7 @@ body.iframe-lightbox--open {
 	
 	var containerClass = "iframe-lightbox";
 	var iframeLightboxOpenClass = "iframe-lightbox--open";
-	var iframeLightboxLinkIsBindedClass = "premiumTeaserHolder.tilt--is-binded";
+	var iframeLightboxLinkIsBindedClass = "iframe-lightbox-link--is-binded";
 	
 	var isLoadedClass = "is-loaded";
 	var isOpenedClass = "is-opened";
@@ -445,7 +465,7 @@ body.iframe-lightbox--open {
 
 	(function(root, document) {
 		"use strict";
-		[].forEach.call(document.getElementsByClassName("premiumTeaserHolder.tilt"), function(el) {
+		[].forEach.call(document.getElementsByClassName("iframe-lightbox-link"), function(el) {
 			el.lightbox = new IframeLightbox(el, {
 				onCreated: function() {
 					/* show your preloader */
@@ -501,7 +521,7 @@ body.iframe-lightbox--open {
 										<h2>Latest Games</h2><a href="latest-games\index.htm?locale=en" class="button">Show all</a></div>
 
 								<ul><li>
-        <a href="https://gachalife.ru/gacha/" rel="lightbox" data-scrolling="true" class="premiumTeaserHolder tilt" title="Tower Crash 3D" data-package-id="tower-crash-3d">
+        <a href="latest-games\tower-crash-3d\index.htm?locale=en" class="premiumTeaserHolder tilt" title="Tower Crash 3D" data-package-id="tower-crash-3d">
             <div class="background"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/bg.jpeg" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder/PremiumTeaserBg.png" alt="Tower Crash 3D background"></div>
             <div class="logo"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/logo.png?v4" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder.png" alt="Tower Crash 3D logo"></div>
 			<div class="figure cutted"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/figure.png" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder.png" alt="Tower Crash 3D figure"></div>
