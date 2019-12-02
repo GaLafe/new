@@ -20,13 +20,22 @@
 
 	<link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
         <link rel='stylesheet' href='https://codepen.io/fancyapps/pen/ybgpzy.css'>
+	<style type="text/css">
+.fancybox-slide--iframe .fancybox-content {
+	width  : 100%;
+	height : 100%;
+	max-width  : 100%;
+	max-height : 100%;
+	margin: 0;
+}
+</style>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
 <script src='https://codepen.io/fancyapps/pen/ybgpzy.js'></script>
 <script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script><script  src="./script.js"></script>
 	
 	
 	<script>  
-		var cmds = [];
+		var cmds = []; 
 	</script>
 
 	<link rel="stylesheet" type="text/css" media="all" href="assets\css\Famobi.min.css?v31">
@@ -43,18 +52,35 @@
 </head> 
 <body>
 		<header>
+		<div class="inner">
+				<ul>
+									<label>
+									</label>
+
+									<div class="searchResults"></div>
+								</div>
+							</form>
+						</div>
+					</li>
+					</li>
 
 					<h2 class="withIcon">
 						<small>Publish, Buy or Rent</small>
 						<span><svg viewbox="0 0 512 512"><path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"></path><path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"></path><path fill="#f16529" d="M256 480.5V131H404.3L376 447"></path><path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"></path><path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"></path></svg> HTML5 Games</span>
-					</h2>	
+					</h2>		</div>
 	</header>
+	
+	<article class="dark">
+		<h2 class="hide">License the best HTML5 Games - only at Famobi</h2>
+		<a id="top"></a>
+
+<div class="inner"> 
     <section class="noBox premiumGamesList">
 									<div class="headlineHolder">
 										<h2>Latest Games</h2></div>
 
 								<ul><li>
-        <a data-fancybox data-type="iframe" data-scrolling="no" href="javascript:;" data-src="https://games.cdn.famobi.com/html5games/c/color-pixel-art-classic/v230/?fg_domain=play.famobi.com&fg_aid=A-AQ635&fg_uid=1d87d326-b266-4148-b2c8-c720d5285632&fg_pid=1d375c53-baec-4e31-a4fb-5b905604c2d5&fg_beat=506&original_ref=https%3A%2F%2Fplay.famobi.com%2Fhtml5game%2F1d87d326-b266-4148-b2c8-c720d5285632%2FA-AQ635" class="premiumTeaserHolder tilt" title="Tower Crash 3D" data-package-id="tower-crash-3d">
+        <a data-fancybox data-type="iframe" data-scrolling="no" href="javascript:;" data-src="https://games.cdn.famobi.com/html5games/c/color-pixel-art-classic/v230/?fg_domain=play.famobi.com&fg_aid=A-AQ635&fg_uid=1d87d326-b266-4148-b2c8-c720d5285632&fg_pid=1d375c53-baec-4e31-a4fb-5b905604c2d5&fg_beat=490&original_ref=https%3A%2F%2Fplay.famobi.com%2Fcolor-pixel-art-classic%2FA-AQ635" class="premiumTeaserHolder tilt" title="Tower Crash 3D" data-package-id="tower-crash-3d">
             <div class="background"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/bg.jpeg" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder/PremiumTeaserBg.png" alt="Tower Crash 3D background"></div>
             <div class="logo"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/logo.png?v4" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder.png" alt="Tower Crash 3D logo"></div>
 			<div class="figure cutted"><img class="lazy" data-original="https://ik.imagekit.io/sjyfpsp1n/marketing/premiumTeaser/tower-crash-3d/figure.png" src="https://ik.imagekit.io/sjyfpsp1n/fa/assets/img/Placeholder.png" alt="Tower Crash 3D figure"></div>
@@ -270,15 +296,7 @@
 <script type="text/javascript">
 VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
 </script>
-	<style type="text/css">
-.fancybox-slide--iframe .fancybox-content {
-	width  : 100%;
-	height : 100%;
-	max-width  : 100%;
-	max-height : 100%;
-	margin: 0;
-}
-</style>
+					</article>
 				<footer>
 			<div class="inner">
 										
@@ -329,5 +347,5 @@ VK.Widgets.Comments("vk_comments", {limit: 5, attach: "*"});
 		<script src="assets\js\tilt.jquery.min.js" async=""></script>
 		<script src="assets\js\GameSubmission.js?v2" async=""></script>
 		<script src="assets\js\app.js" async=""></script>
-</body>
+	</body>
 </html>
