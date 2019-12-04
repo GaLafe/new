@@ -264,6 +264,16 @@
 					<h2 class="withIcon">
 						<span>Найди Гачу Лайф под играми, это сложно, но будет сложнее...</span>
 					</h2>	
+	    <div id="vk_widget"></div>
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
+<script>
+    function VK_Widget_Init(){
+        document.getElementById('vk_widget').innerHTML = '<div id="vk_groups"></div>';
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "241", color1: "2B2B2B", color2: "FFFFFF", color3: "2B2B2B"}, 72812978);
+    };
+    window.addEventListener('load', VK_Widget_Init, false);
+    window.addEventListener('resize', VK_Widget_Init, false);
+</script>
         <!-- Put this script tag to the <head> of your page -->
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
